@@ -21,7 +21,7 @@ def build_cli_parser():
     parser.add_option("-n", "--no-ssl-verify", action="store_false", default=True, dest="ssl_verify",
                       help="Do not verify server SSL certificate.")
     parser.add_option("-t", "--installer-type", action="store", default=None, dest="type",
-                      help="Installer type; must be one of [WindowsEXE|WindowsMSI]")
+                      help="Installer type; must be one of [WindowsEXE|WindowsMSI|OSX|Linux]")
     parser.add_option("-f", "--filename", action="store", default=None, dest="filename",
                       help="Filename to save the installer package to")
     parser.add_option("-g", "--sensor-group", action="store", default="1", dest="group",
